@@ -4,8 +4,7 @@
 
 <bloque_instrucciones>::-<instruccion>|<bloque_instrucciones>
 
-<instruccion>::-
-<operaciones>|<secuencia>|<declarar_variable>|<asignar>|<condicional>|<iteracion>|<leer>|<bloque_instrucciones>
+<instruccion>::-<operaciones>|<secuencia>|<declarar_variable>|<asignar>|<condicional>|<iteracion>|<leer>|<bloque_instrucciones>
 
 <secuencia>::-<bloque_instrucciones>
 
