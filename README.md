@@ -32,6 +32,50 @@
 <entero>::-<numeros>
 
 <booleano>::-<true>|<false>
+  
+<flotante>::-<signo><digito>' . '<digito>
+
+<caracter>::-'!'|'@'|'%'|'&'|'*'|'('|')'|'{'|'_'|'}'|'['|']'|':'|';'|'<'|'>'|'?'|<mayusculas>|<minusculas>
+<pausa_opcional>::- <milisegundo>
+<milisegundo>::-<entero>|<flotante>
+<valor>::-<nombre_variable>|<cadena>|<numero>|<caracter>|<booleano>|<pausa_opcional>
+
+<asignar>::- <nombre_variable>'='<valor>
+
+<condicional>::-<si>|<si_sino>
+
+<si>::-'si ('<condicion>') {' <bloque_instrucciones> '}'
+
+<condicion>::-<nombre_variable><operador_relacional><valor>
+
+<operador_relacional>::- '=='|'<'|'=<'|'=>'|'!='|'>'
+<si_sino>::- 'si ('<condicion>') {'<bloque_instrucciones>'} sino {'<bloque_instrucciones>'}'
+
+<iteracion>::-<mientras>|<para>
+
+<mientras>::-'mientras ('<condicion>' ) { '<bloque_instrucciones>'}'
+
+<para>::-'para ('<variable_entera>' ; '<condicion_numerica>' ; '<contador>'{ '<bloque_instrucciones>' }'
+
+<variable_entera>::- 'entero '<nombre_variable>'='<numeros>
+
+<condicion_numerica>::-<variable_entera><operador_relacional><numero>
+
+<contador>::- <variable_entera>'+'<digitos>
+
+
+
+<operaciones>::-<estado_reflector>|<estado_fuente>| <estado_reflector>::-<encendido>|<apagado>|<intensidad>|<tipo_reflector>| <tipo_reflector>::-<color_luz>|<cantidad_colores> <color_luz>::-'amarillo '|' rojo'|' azul'|'verde'|'naranja'|'violeta'|'blanco'|'negro'| 
+<cantidad_colores>::-'1 '|' 2'|' 3'|'4 '|
+<intensidad>::-<digitos>
+
+<estado_fuente>::-<encendido>|<apagado>|<intensidad>
+<encendido>::-<true>
+<apagado>::-<false>
+
+Probando
+
+
 
 <flotante>::-<signo><digito>' . '<digito>
 
