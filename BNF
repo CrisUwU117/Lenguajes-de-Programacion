@@ -1,1 +1,64 @@
 
+:: - <bloque_instrucciones>
+
+<bloque_instrucciones> :: - | <bloque_instrucciones>
+
+:: - || <declarar_variable> ||||| <bloque_instrucciones>
+
+:: - <bloque_instrucciones>
+
+<declarar_variable> :: - <nombre_variable> 'as' <tipo_dato> '=' | <nombre_variable> 'como' <tipo_dato>
+
+<nombre_variable> :: -
+
+:: - | :: - |
+
+:: - 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'Yo' | 'J' | ' K '| 'L' | 'M' | 'N' | Ñ ​​'' | ' O '| 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z'
+
+:: - 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'yo' | 'j' | ' k '| 'l' | 'm' | 'n' | ñ '' | ' o '| 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z'
+
+:: - :: - '-' | '+'
+
+:: - '0' | <numero_validos>
+
+<numero_validos> :: - '1' | ' 2 '|' 3 '|' 4 '|' 5 '|' 6 '|' 7 '|' 8 '|' 9 '
+
+<tipo_dato> :: - ||||
+
+:: -
+
+:: - |
+
+:: - '. '
+
+:: - '!' | '@' | '%' | '&' | '*' | '(' | ')' | '{' | '_' | '}' | '[' | ']' | ':' | ';' | '<' | '>' | '?' || <pausa_opcional> :: - :: - | :: - <nombre_variable> ||||| <pausa_opcional>
+
+:: - <nombre_variable> '='
+
+:: - | <si_sino>
+
+:: - 'si (' ') {' <bloque_instrucciones> '}'
+
+:: - <nombre_variable> <operador_relacional>
+
+<operador_relacional> :: - '==' | '<' | '= <' | '=>' | '! =' | '>' <si_sino> :: - 'si (' ') {' <bloque_instrucciones> '} sino {' <bloque_instrucciones> '}'
+
+:: - |
+
+:: - 'mientras (' ') {' <bloque_instrucciones> '}'
+
+:: - 'para (' <variable_entera> ';' <condicion_numerica> ';' '{' <bloque_instrucciones> '}'
+
+<variable_entera> :: - 'entero' <nombre_variable> '='
+
+<condicion_numerica>::-<variable_entera> <operador_relacional>
+
+:: - <variable_entera> '+'
+
+:: - <estado_reflector> | <estado_fuente> | <estado_reflector> :: - ||| <tipo_reflector> | <tipo_reflector> :: - <color_luz> | <cantidad_colores> <color_luz> :: - 'amarillo' | ' rojo '|' azul '|' verde '|' naranja '|' violeta '|' blanco '|' negro '| <cantidad_colores> :: - '1' | ' 2 '|' 3 '|' 4 '| :: -
+
+<estado_fuente> :: - || :: - :: -
+
+Probando
+
+:: - '. '
